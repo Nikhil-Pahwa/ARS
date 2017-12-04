@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FlightService } from '../';
+import { Flight } from '../../../shared/resources/';
 
 @Component({
   selector: 'app-flight-search',
@@ -9,6 +10,8 @@ import { FlightService } from '../';
 })
 export class FlightSearchComponent implements OnInit {
 
+  private flightsList: Flight[];
+
   constructor(private flightService: FlightService) { }
 
   ngOnInit() {
@@ -16,8 +19,8 @@ export class FlightSearchComponent implements OnInit {
 
   searchFlights() {
     this.flightService.getFlightResults()
-      .subscribe((data: any) => {
-        console.log(data);
+      .subscribe((data: Flight[]) => {
+        this.flightsList = data;
       });
   }
 

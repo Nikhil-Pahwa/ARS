@@ -1,3 +1,6 @@
-<p>
-  <button (click)="searchFlights()">Search</button>
-</p>
+<button (click)="searchFlights()">
+  Search</button>
+<div *ngFor="let flight of flightsList">
+  <span>{{flight.origin}}</span>##
+</div>
+<app-header></app-header>

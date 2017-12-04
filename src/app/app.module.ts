@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { FlightDetailComponent } from './modules/flights/flight-detail/flight-detail.component';
 import { FlightSearchComponent } from './modules/flights/flight-search/flight-search.component';
+import { SharedModule } from './shared/shared.module';
 
 const appRoutes: Routes = [
   { path: 'search', component: FlightSearchComponent }
@@ -20,7 +21,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    HttpModule
+    HttpModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
