@@ -18,11 +18,13 @@
     "testTsconfig": "tsconfig.spec.json",
     "prefix": "app",
     "styles": [
-      "styles.css",
-      "assets/css/bootstrap.css"
+      "assets/css/jquery-ui.css",
+      "assets/css/bootstrap.css",
+      "styles.css"
     ],
     "scripts": [
       "assets/js/jquery.min.js",
+      "assets/js/jquery-ui.js",
       "assets/js/bootstrap.js"
     ],
     "environmentSource": "environments/environment.ts",
@@ -55,7 +57,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "component": {}
   }
 }

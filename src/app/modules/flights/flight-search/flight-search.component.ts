@@ -2,10 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { FlightService } from '../';
 import { Flight } from '../../../shared/resources/';
 
+declare let jQuery: any;
+
 @Component({
   selector: 'app-flight-search',
   templateUrl: './flight-search.component.html',
-  styleUrls: ['./flight-search.component.css'],
+  styleUrls: ['./flight-search.component.scss'],
   providers: [FlightService]
 })
 export class FlightSearchComponent implements OnInit {
@@ -15,6 +17,7 @@ export class FlightSearchComponent implements OnInit {
   constructor(private flightService: FlightService) { }
 
   ngOnInit() {
+    jQuery('#datepicker1').datepicker();
   }
 
   searchFlights() {

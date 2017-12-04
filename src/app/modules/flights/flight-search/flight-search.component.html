@@ -1,6 +1,92 @@
-<button (click)="searchFlights()">
-  Search</button>
-<div *ngFor="let flight of flightsList">
-  <span>{{flight.origin}}</span>##
+<!-- banner-text -->
+<div class="banner-text">
+  <h2>Hundreds of Destinations Worldwide</h2>
+  <div class="book-form" id="register">
+    <p>Pick your destination</p>
+    <div class="col-md-3 form-time-w3layouts">
+      <label>Travelling From</label>
+      <select class="form-control">
+        <option>From</option>
+        <option>New York</option>
+        <option>Lisbon</option>
+        <option>Melbourne</option>
+        <option>Berlin</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="col-md-3 form-left-agileits-w3layouts ">
+      <label>Travelling To</label>
+      <select class="form-control">
+        <option>To</option>
+        <option>Torino</option>
+        <option>Madrid</option>
+        <option>London</option>
+        <option>Wellington</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="col-md-3 form-date-w3-agileits">
+      <label>Departure Date</label>
+      <input id="datepicker1" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
+        required="">
+    </div>
+    <div class="col-md-3 form-left-agileits-submit">
+      <button class="submit" (click)="searchFlights()">search</button>
+    </div>
+    <div class="clearfix"></div>
+  </div>
 </div>
-<app-header></app-header>
+<!-- banner END-->
+
+<!-- Flight Listing -->
+<div class="flight-listing-container">
+  <ul class="results-list">
+    <li class="offer-listing" *ngFor="let flight of flightsList">
+      <div class="flex-content">
+        <div class="flex-area-primary">
+          <div class="flex-card flex-listing">
+            <div class="flex-figure">
+              <figure class="flex-image">
+                <img src="//images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/AI_sq.svg"
+                />
+              </figure>
+            </div>
+            <div class="flex-content">
+              <div class="flex-area-primary">
+                <div class="primary-block">
+                  <div class="primary">
+                    <span class="departure-time">1:20pm</span>
+                    -
+                    <span class="arrival-time">2:35pm</span>
+                  </div>
+                  <div class="secondary">Air India</div>
+                </div>
+                <div class="primary-block">
+                  <div class="primary duration-emphasis">
+                    <span class="departure-time">1h 15m</span>
+                  </div>
+                  <div class="secondary"></div>
+                </div>
+                <div class="primary-block">
+                  Nonstop
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-area-secondary">
+          <div class="price-button-wrapper">
+            <div class="price-column">
+              <div class="offer-price">
+                <span class="price-emphasis">Rs 103</span>
+              </div>
+            </div>
+            <button class="select">Select</button>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<!-- Flight Listing END-->
