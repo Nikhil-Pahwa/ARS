@@ -12,7 +12,7 @@ declare let jQuery: any;
 })
 export class FlightSearchComponent implements OnInit {
 
-  private flightsList: Flight[];
+  public flightsList: Flight[];
 
   constructor(private flightService: FlightService) { }
 

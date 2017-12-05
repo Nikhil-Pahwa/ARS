@@ -73,8 +73,7 @@
             <div class="flex-card flex-listing">
               <div class="flex-figure">
                 <figure class="flex-image">
-                  <img src="//images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/AI_sq.svg"
-                  />
+                  <img src={{flight.logoUrl}} />
                 </figure>
               </div>
               <div class="flex-content">
@@ -107,7 +106,7 @@
                   <span class="price-emphasis">{{flight.totalfare}}</span>
                 </div>
               </div>
-              <button class="select">Select</button>
+              <button [routerLink]="['/detail', flight.flightId]" class="select">Select</button>
             </div>
           </div>
         </div>

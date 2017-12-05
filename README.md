@@ -33,9 +33,11 @@ c) Responsive
 d) Different major browser supported
 e) Automation build
 f) YSlow compliant
-h) Best Practice Implemented
+h) Implemented based on the Angular's official guideline
 i) Continous integration implemented
 j) Test cases implemented for major componenents
+k) Page not found handled
+l) Proper comments
 
 ## Assumptions 
 Vendor's brand image and style files are hosted in their respective domain. The url for the style and brand image is saved in the Database. These information will be received from the ARS server in the flight object.

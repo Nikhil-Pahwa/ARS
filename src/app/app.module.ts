@@ -9,7 +9,8 @@ import { FlightSearchComponent } from './modules/flights/flight-search/flight-se
 import { SharedModule } from './shared/shared.module';
 
 const appRoutes: Routes = [
-  { path: 'search', component: FlightSearchComponent }
+  { path: 'search', component: FlightSearchComponent },
+  { path: 'detail/:fid', component: FlightDetailComponent }
 ];
 
 @NgModule({
