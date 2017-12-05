@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Additional features added
+a) Added localization 
+b) Sass Support
+c) Responsive 
+d) Different major browser supported
+e) Automation build
+f) YSlow compliant
+h) Best Practice Implemented
+i) Continous integration implemented
+j) Test cases implemented for major componenents
+
+## Assumptions 
+Vendor's brand image and style files are hosted in their respective domain. The url for the style and brand image is saved in the Database. These information will be received from the ARS server in the flight object.

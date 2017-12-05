@@ -81,20 +81,20 @@
                 <div class="flex-area-primary">
                   <div class="primary-block">
                     <div class="primary">
-                      <span class="departure-time">1:20pm</span>
+                      <span class="departure-time">{{flight.deptime}}</span>
                       -
-                      <span class="arrival-time">2:35pm</span>
+                      <span class="arrival-time">{{flight.arrtime}}</span>
                     </div>
-                    <div class="secondary">Air India</div>
+                    <div class="secondary">{{flight.airline}}</div>
                   </div>
                   <div class="primary-block">
                     <div class="primary duration-emphasis">
-                      <span class="departure-time">1h 15m</span>
+                      <span class="departure-time">{{flight.deptime}}</span>
                     </div>
                     <div class="secondary"></div>
                   </div>
                   <div class="primary-block">
-                    Nonstop
+                    {{flight.stops}} stop
                   </div>
                 </div>
               </div>
@@ -104,7 +104,7 @@
             <div class="price-button-wrapper">
               <div class="price-column">
                 <div class="offer-price">
-                  <span class="price-emphasis">Rs 103</span>
+                  <span class="price-emphasis">{{flight.totalfare}}</span>
                 </div>
               </div>
               <button class="select">Select</button>
