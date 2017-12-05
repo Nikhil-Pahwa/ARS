@@ -37,56 +37,82 @@
   </div>
 </div>
 <!-- banner END-->
-
+<aside class="col">
+  <section class="pattern-filters">
+    <div class="filter-container">
+      <fieldset id="airlines" class="filter-set">
+        <legend class="section-header-sub">
+          <span>Airlines included</span>
+        </legend>
+        <label class="check filter-option">
+          <input type="checkbox">
+          <span class="inline-label">Jet Airways (
+            <span class="count">45</span>)</span>
+        </label>
+        <label class="check filter-option">
+          <input type="checkbox">
+          <span class="inline-label">Air India (
+            <span class="count">21</span>)</span>
+        </label>
+        <label class="check filter-option">
+          <input type="checkbox">
+          <span class="inline-label">Hahn Air Systems (
+            <span class="count">6</span>)</span>
+        </label>
+      </fieldset>
+    </div>
+  </section>
+</aside>
 <!-- Flight Listing -->
-<div class="flight-listing-container">
-  <ul class="results-list">
-    <li class="offer-listing" *ngFor="let flight of flightsList">
-      <div class="flex-content">
-        <div class="flex-area-primary">
-          <div class="flex-card flex-listing">
-            <div class="flex-figure">
-              <figure class="flex-image">
-                <img src="//images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/AI_sq.svg"
-                />
-              </figure>
-            </div>
-            <div class="flex-content">
-              <div class="flex-area-primary">
-                <div class="primary-block">
-                  <div class="primary">
-                    <span class="departure-time">1:20pm</span>
-                    -
-                    <span class="arrival-time">2:35pm</span>
+<section class="col">
+  <div class="flight-listing-container">
+    <ul class="results-list">
+      <li class="offer-listing" *ngFor="let flight of flightsList">
+        <div class="flex-content">
+          <div class="flex-area-primary">
+            <div class="flex-card flex-listing">
+              <div class="flex-figure">
+                <figure class="flex-image">
+                  <img src="//images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/AI_sq.svg"
+                  />
+                </figure>
+              </div>
+              <div class="flex-content">
+                <div class="flex-area-primary">
+                  <div class="primary-block">
+                    <div class="primary">
+                      <span class="departure-time">1:20pm</span>
+                      -
+                      <span class="arrival-time">2:35pm</span>
+                    </div>
+                    <div class="secondary">Air India</div>
                   </div>
-                  <div class="secondary">Air India</div>
-                </div>
-                <div class="primary-block">
-                  <div class="primary duration-emphasis">
-                    <span class="departure-time">1h 15m</span>
+                  <div class="primary-block">
+                    <div class="primary duration-emphasis">
+                      <span class="departure-time">1h 15m</span>
+                    </div>
+                    <div class="secondary"></div>
                   </div>
-                  <div class="secondary"></div>
-                </div>
-                <div class="primary-block">
-                  Nonstop
+                  <div class="primary-block">
+                    Nonstop
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="flex-area-secondary">
-          <div class="price-button-wrapper">
-            <div class="price-column">
-              <div class="offer-price">
-                <span class="price-emphasis">Rs 103</span>
+          <div class="flex-area-secondary">
+            <div class="price-button-wrapper">
+              <div class="price-column">
+                <div class="offer-price">
+                  <span class="price-emphasis">Rs 103</span>
+                </div>
               </div>
+              <button class="select">Select</button>
             </div>
-            <button class="select">Select</button>
           </div>
         </div>
-      </div>
-    </li>
-  </ul>
-</div>
-
+      </li>
+    </ul>
+  </div>
+</section>
 <!-- Flight Listing END-->

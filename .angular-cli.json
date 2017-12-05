@@ -20,7 +20,7 @@
     "styles": [
       "assets/css/jquery-ui.css",
       "assets/css/bootstrap.css",
-      "styles.css"
+      "assets/sass/main.scss"
     ],
     "scripts": [
       "assets/js/jquery.min.js",
