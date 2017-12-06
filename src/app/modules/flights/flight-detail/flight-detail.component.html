@@ -1,3 +1,44 @@
-<p>
-  flight-detail works!
-</p>
+<div class="main">
+  <section class="flightSummaryContainer">
+    <div class="flex-card">
+      <div class="flex-container">
+        <div class="flex-area-primary">
+          <div class="dateAndOD">
+            <h3 class="date">Fri, Dec 15</h3>
+            <ol class="odPair">
+              <li>
+                <span class="type">From</span>
+                <span class="airport-type">{{flight?.origin}}</span>
+              </li>
+              <li>
+                <span class="type">To</span>
+                <span class="airport-type">{{flight?.destination}}</span>
+              </li>
+            </ol>
+          </div>
+          <figure class="airlineLogo">
+            <img src={{flight?.logoUrl}}>
+          </figure>
+          <h4 class="airlineName">{{flight?.airline}}</h4>
+          <div class="flightSummary-timeDuration">
+            <div class="departure">
+              <span class="time">{{flight?.deptime}}</span>
+              <span class="airportCode">{{flight?.origin}}</span>
+            </div>
+            <div class="arrowIcon">
+              <span class="alt glyphicons glyphicons-arrow-right">To</span>
+            </div>
+            <div class="arrival">
+              <span class="time">{{flight?.deptime}}</span>
+              <div class="airportCode">{{flight?.destination}}</div>
+            </div>
+            <div class="durationStops">
+              <span class="durationTime">{{flight?.deptime}}</span>
+              <span class="stopsLabel">{{flight?.duration}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

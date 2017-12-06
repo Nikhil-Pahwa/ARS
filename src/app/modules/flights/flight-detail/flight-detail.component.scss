@@ -1,0 +1,73 @@
+.flightSummaryContainer {
+  background: #fff;
+  padding: 40px 40px 50px;
+}
+
+.flex-area-primary {
+  .dateAndOD {
+    .date {
+      float: left;
+      margin: 0;
+      width: 170px;
+    }
+    .odPair {
+      padding-left: 0;
+      margin-left: 0;
+      margin-right: 0;
+      list-style: none;
+      li {
+        font-weight: 700;
+        padding-bottom: 0;
+        span:first-child {
+          color: #616161;
+          display: inline-block;
+          margin-right: .58823529em;
+          min-width: 4.23529412em;
+        }
+      }
+    }
+  }
+  .airlineLogo {
+    width: 2em;
+    height: 2em;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    img {
+      width: 100%;
+    }
+  }
+  .airlineName {
+    display: inline-block;
+    font-weight: normal;
+    margin: 0 0 0 .7em;
+  }
+  .flightSummary-timeDuration {
+    clear: both;
+    .departure {
+      width: 170px;
+      float: left;
+      .time {
+        font-size: 1.4em;
+      }
+      .airportCode {
+        font-size: .9em;
+        display: block;
+      }
+    }
+    .arrowIcon {
+      width: 4em;
+      height: 3em;
+      float: left;
+    }
+    .arrival {
+      width: 144px;
+      float: left;
+    }
+    .durationStops {
+      padding-left: .7em
+    }
+  }
+}

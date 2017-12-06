@@ -8,6 +8,7 @@ export interface RemoteFlight {
     stops: number;
     logoUrl: string;
     fid: string;
+    destination: string;
 }
 
 export interface Flight {
@@ -20,6 +21,7 @@ export interface Flight {
     stops: number;
     logoUrl: string;
     flightId: string;
+    destination: string;
 }
 
 export class Flight implements Flight {
@@ -32,13 +34,14 @@ export class Flight implements Flight {
         public arrtime: string,
         public stops: number,
         public logoUrl: string,
-        public flightId: string
+        public flightId: string,
+        public destination: string
     ) {
     }
 }
 
 export function FlightFromRemote(flight: RemoteFlight): Flight {
     return new Flight(flight.origin, flight.deptime, flight.duration,
-        flight.flightno, flight.airline, flight.arrtime, flight.stops, flight.logoUrl, flight.fid);
+        flight.flightno, flight.airline, flight.arrtime, flight.stops, flight.logoUrl, flight.fid, flight.destination);
 }
 
