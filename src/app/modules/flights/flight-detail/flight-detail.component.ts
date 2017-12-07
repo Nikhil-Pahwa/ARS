@@ -4,6 +4,7 @@ import 'rxjs/add/operator/switchMap';
 
 import { FlightService } from '../';
 import { Flight } from '../../../shared/resources/';
+import { HeaderService } from '../../../shared/components/';
 
 @Component({
   selector: 'app-flight-detail',
@@ -16,7 +17,8 @@ export class FlightDetailComponent implements OnInit, OnDestroy {
 
   public flight: Flight;
 
-  constructor(private route: ActivatedRoute, private router: Router, private flightService: FlightService) { }
+  constructor(private route: ActivatedRoute, private router: Router,
+    private flightService: FlightService, private headerService: HeaderService) { }
 
   ngOnInit() {
     let fid = this.route.snapshot.paramMap.get('fid');
@@ -25,6 +27,7 @@ export class FlightDetailComponent implements OnInit, OnDestroy {
         this.flight = data.filter(d => (d.flightId == fid))[0];
         console.log(this.flight);
         this.loadCSS(this.flight.styleUrl);
+        this.headerService.setLogo(this.flight.logoUrl);
       });
   }
 

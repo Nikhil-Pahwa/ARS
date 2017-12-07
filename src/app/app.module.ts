@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { FlightDetailComponent } from './modules/flights/flight-detail/flight-detail.component';
 import { FlightSearchComponent } from './modules/flights/flight-search/flight-search.component';
 import { SharedModule } from './shared/shared.module';
+import { HeaderService } from './shared/components/header';
 
 const appRoutes: Routes = [
   { path: 'search', component: FlightSearchComponent },
@@ -25,7 +26,7 @@ const appRoutes: Routes = [
     HttpModule,
     SharedModule
   ],
-  providers: [],
+  providers: [HeaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
