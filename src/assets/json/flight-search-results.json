@@ -28,6 +28,7 @@
         "provider": "",
         "PromotionId": "",
         "fid": 4,
+        "styleUrl": "assets/css/external_domain_styles/air_india.css",
         "logoUrl": "//images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/AI_sq.svg",
         "fare": {
           "grossamount": 4886,
@@ -84,6 +85,7 @@
         "seatsavailable": "1",
         "carrierid": "9W",
         "airline": "Jet Airways",
+        "styleUrl": "assets/css/external_domain_styles/jet_airways.css",
         "provider": "",
         "PromotionId": "",
         "fare": {
@@ -123,6 +125,7 @@
             "seatsavailable": "1",
             "carrierid": "9W",
             "airline": "Jet Airways",
+            "styleUrl": "assets/css/external_domain_styles/jet_airways.css",
             "provider": "",
             "PromotionId": "",
             "fare": {
@@ -170,6 +173,7 @@
             "seatsavailable": "1",
             "carrierid": "9W",
             "airline": "Jet Airways",
+            "styleUrl": "assets/css/external_domain_styles/jet_airways.css",
             "provider": "",
             "PromotionId": "",
             "fare": {
@@ -234,6 +238,7 @@
         "seatsavailable": "1",
         "carrierid": "9W",
         "airline": "Air India",
+        "styleUrl": "assets/css/external_domain_styles/air_india.css",
         "logoUrl": "//images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/AI_sq.svg",
         "provider": "",
         "PromotionId": "",
@@ -274,6 +279,7 @@
             "seatsavailable": "1",
             "carrierid": "9W",
             "airline": "Jet Airways",
+            "styleUrl": "assets/css/external_domain_styles/jet_airways.css",
             "provider": "",
             "PromotionId": "",
             "fare": {
@@ -322,6 +328,7 @@
             "seatsavailable": "1",
             "carrierid": "9W",
             "airline": "Jet Airways",
+            "styleUrl": "assets/css/external_domain_styles/jet_airways.css",
             "provider": "",
             "PromotionId": "",
             "logoUrl": "//images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/9W_sq.svg",
@@ -388,6 +395,7 @@
         "carrierid": "9W",
         "logoUrl": "//images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/9W_sq.svg",
         "airline": "Jet Airways",
+        "styleUrl": "assets/css/external_domain_styles/jet_airways.css",
         "provider": "",
         "PromotionId": "",
         "fare": {
@@ -427,6 +435,7 @@
             "seatsavailable": "1",
             "carrierid": "9W",
             "airline": "Jet Airways",
+            "styleUrl": "assets/css/external_domain_styles/jet_airways.css",
             "provider": "",
             "PromotionId": "",
             "fare": {
@@ -475,6 +484,7 @@
             "seatsavailable": "1",
             "carrierid": "9W",
             "airline": "Jet Airways",
+            "styleUrl": "assets/css/external_domain_styles/jet_airways.css",
             "logoUrl": "//images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/9W_sq.svg",
             "provider": "",
             "PromotionId": "",
@@ -541,6 +551,7 @@
         "carrierid": "9W",
         "logoUrl": "//images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/9W_sq.svg",
         "airline": "Jet Airways",
+        "styleUrl": "assets/css/external_domain_styles/jet_airways.css",
         "provider": "",
         "PromotionId": "",
         "fare": {
@@ -580,6 +591,7 @@
             "seatsavailable": "1",
             "carrierid": "9W",
             "airline": "Jet Airways",
+            "styleUrl": "assets/css/external_domain_styles/jet_airways.css",
             "provider": "",
             "PromotionId": "",
             "fare": {
@@ -628,6 +640,7 @@
             "seatsavailable": "1",
             "carrierid": "9W",
             "airline": "Jet Airways",
+            "styleUrl": "assets/css/external_domain_styles/jet_airways.css",
             "provider": "",
             "PromotionId": "",
             "fare": {
@@ -692,6 +705,7 @@
         "seatsavailable": "1",
         "carrierid": "9W",
         "airline": "Air India",
+        "styleUrl": "assets/css/external_domain_styles/air_india.css",
         "logoUrl": "//images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/AI_sq.svg",
         "provider": "",
         "PromotionId": "",
@@ -732,6 +746,7 @@
             "seatsavailable": "1",
             "carrierid": "9W",
             "airline": "Jet Airways",
+            "styleUrl": "assets/css/external_domain_styles/jet_airways.css",
             "provider": "",
             "PromotionId": "",
             "fare": {
@@ -779,6 +794,7 @@
             "seatsavailable": "1",
             "carrierid": "9W",
             "airline": "Jet Airways",
+            "styleUrl": "assets/css/external_domain_styles/jet_airways.css",
             "provider": "",
             "PromotionId": "",
             "fare": {

@@ -24,9 +24,8 @@ export class FlightDetailComponent implements OnInit, OnDestroy {
       .subscribe((data: Flight[]) => {
         this.flight = data.filter(d => (d.flightId == fid))[0];
         console.log(this.flight);
+        this.loadCSS(this.flight.styleUrl);
       });
-
-    this.loadCSS('assets/css/ad.css');
   }
 
 
