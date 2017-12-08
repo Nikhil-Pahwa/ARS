@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Language } from 'angular-l10n';
+
 import { FlightService } from '../';
 import { Flight } from '../../../shared/resources/';
 import { HeaderService } from '../../../shared/components/';
@@ -12,6 +14,8 @@ declare let jQuery: any;
   providers: [FlightService]
 })
 export class FlightSearchComponent implements OnInit {
+
+  @Language() lang;
 
   public flightsList: Flight[];
 

@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpModule } from '@angular/http';
+import { TranslationModule, LocaleService, TranslationService, LocalizationModule } from 'angular-l10n';
 
 import { AppComponent } from './app.component';
 import { FlightDetailComponent } from './modules/flights/flight-detail/flight-detail.component';
@@ -24,9 +25,26 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     HttpModule,
-    SharedModule
+    SharedModule,
+
+    // Translation
+    TranslationModule.forRoot(),
+    LocalizationModule.forRoot(),
   ],
   providers: [HeaderService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(public locale: LocaleService, public translation: TranslationService) {
+    this.locale.addConfiguration()
+      .addLanguages(['en', 'ru'])
+      .defineLanguage('en');
+    this.locale.init();
+
+    this.translation
+      .addConfiguration()
+      .addProvider('./assets/translations/locale-');
+
+    this.translation.init();
+  }
+}

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HeaderService } from './header.service';
+import { Language } from 'angular-l10n';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +8,8 @@ import { HeaderService } from './header.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+
+  @Language() lang;
 
   public logoUrl: string = '';
 

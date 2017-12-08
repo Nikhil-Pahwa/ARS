@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import 'rxjs/add/operator/switchMap';
+import { Language } from 'angular-l10n';
 
 import { FlightService } from '../';
 import { Flight } from '../../../shared/resources/';
@@ -14,6 +15,8 @@ import { HeaderService } from '../../../shared/components/';
   encapsulation: ViewEncapsulation.None
 })
 export class FlightDetailComponent implements OnInit, OnDestroy {
+
+  @Language() lang;
 
   public flight: Flight;
 

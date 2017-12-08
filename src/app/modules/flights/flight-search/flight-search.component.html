@@ -1,10 +1,9 @@
 <!-- banner-text -->
 <div class="banner-text">
-  <h2>Hundreds of Destinations Worldwide</h2>
+  <h2>{{ 'PICK_YOUR_DESTINATION' | translate:lang }}</h2>
   <div class="book-form" id="register">
-    <p>Pick your destination</p>
     <div class="col-md-3 form-time-w3layouts">
-      <label>Travelling From</label>
+      <label>{{ 'TRAVELLING_FROM' | translate:lang }}</label>
       <select class="form-control">
         <option>From</option>
         <option>New York</option>
@@ -15,7 +14,7 @@
       </select>
     </div>
     <div class="col-md-3 form-left-agileits-w3layouts ">
-      <label>Travelling To</label>
+      <label>{{ 'TRAVELLING_TO' | translate:lang }}</label>
       <select class="form-control">
         <option>To</option>
         <option>Torino</option>
@@ -26,12 +25,12 @@
       </select>
     </div>
     <div class="col-md-3 form-date-w3-agileits">
-      <label>Departure Date</label>
+      <label>{{ 'DEPARTURE_DATE' | translate:lang }}</label>
       <input id="datepicker1" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}"
         required="">
     </div>
     <div class="col-md-3 form-left-agileits-submit">
-      <button class="submit" (click)="searchFlights()">search</button>
+      <button class="submit" (click)="searchFlights()">{{ 'search' | translate:lang }}</button>
     </div>
     <div class="clearfix"></div>
   </div>
@@ -93,7 +92,7 @@
                     <div class="secondary"></div>
                   </div>
                   <div class="primary-block">
-                    {{flight.stops}} stop
+                    {{flight.stops}} {{ 'STOP' | translate:lang }}
                   </div>
                 </div>
               </div>
