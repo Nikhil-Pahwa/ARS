@@ -1,0 +1,15 @@
+aside {
+  width: 25%;
+  float: left;
+  .pattern-filters {
+    .filter-option {
+      display: block;
+    }
+    .section-header-sub {
+      font-size: 1.1em;
+    }
+    .inline-label {
+      font-size: 0.9em;
+    }
+  }
+}

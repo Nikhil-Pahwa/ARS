@@ -36,32 +36,7 @@
   </div>
 </div>
 <!-- banner END-->
-<aside class="col">
-  <section class="pattern-filters">
-    <div class="filter-container">
-      <fieldset id="airlines" class="filter-set">
-        <legend class="section-header-sub">
-          <span>Airlines included</span>
-        </legend>
-        <label class="check filter-option">
-          <input type="checkbox">
-          <span class="inline-label">Jet Airways (
-            <span class="count">45</span>)</span>
-        </label>
-        <label class="check filter-option">
-          <input type="checkbox">
-          <span class="inline-label">Air India (
-            <span class="count">21</span>)</span>
-        </label>
-        <label class="check filter-option">
-          <input type="checkbox">
-          <span class="inline-label">Hahn Air Systems (
-            <span class="count">6</span>)</span>
-        </label>
-      </fieldset>
-    </div>
-  </section>
-</aside>
+<app-flight-filter *ngIf="flightsList" [flights]=flightsList></app-flight-filter>
 <!-- Flight Listing -->
 <section class="col">
   <div class="flight-listing-container">

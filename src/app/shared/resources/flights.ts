@@ -15,6 +15,7 @@ export interface RemoteFlight {
     destination: string;
     styleUrl: string;
     fare: RemoteFare;
+    carrierId: string;
 }
 
 export interface Flight {
@@ -30,6 +31,7 @@ export interface Flight {
     destination: string;
     styleUrl: string;
     fare: string;
+    carrierId: string;
 }
 
 export class Flight implements Flight {
@@ -45,7 +47,8 @@ export class Flight implements Flight {
         public flightId: string,
         public destination: string,
         public styleUrl: string,
-        public fare: string
+        public fare: string,
+        public carrierId: string
     ) {
     }
 }
@@ -53,6 +56,7 @@ export class Flight implements Flight {
 export function FlightFromRemote(flight: RemoteFlight): Flight {
     return new Flight(flight.origin, flight.deptime, flight.duration,
         flight.flightno, flight.airline, flight.arrtime, flight.stops,
-        flight.logoUrl, flight.fid, flight.destination, flight.styleUrl, flight.fare.grossamount);
+        flight.logoUrl, flight.fid, flight.destination, flight.styleUrl,
+        flight.fare.grossamount, flight.carrierId);
 }
 
