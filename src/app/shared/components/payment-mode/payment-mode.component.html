@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row">
+    <div class="paymentCont">
+      <div class="headingWrap">
+        <h3 class="headingTop text-center">{{ 'SELECT_PAYMENT_MODE' | translate:lang }}</h3>
+      </div>
+      <div class="paymentWrap">
+        <div class="btn-group paymentBtnGroup btn-group-justified" data-toggle="buttons">
+          <label class="btn paymentMethod active">
+            <div class="method visa"></div>
+            <input type="radio" name="options" checked>
+          </label>
+          <label class="btn paymentMethod">
+            <div class="method master-card"></div>
+            <input type="radio" name="options">
+          </label>
+          <label class="btn paymentMethod">
+            <div class="method paytm"></div>
+            <input type="radio" name="options">
+          </label>
+          <label class="btn paymentMethod">
+            <div class="method paypal"></div>
+            <input type="radio" name="options">
+          </label>
+          <label class="btn paymentMethod">
+            <div class="method ez-cash"></div>
+            <input type="radio" name="options">
+          </label>
+
+        </div>
+      </div>
+      <div class="footerNavWrap clearfix">
+        <div class="btn btn-success pull-left btn-fyi" (click)="back()">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          {{ 'BACK' | translate:lang }}
+        </div>
+        <div class="btn btn-success pull-right btn-fyi" (click)="pay()">{{ 'PAY' | translate:lang }}
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

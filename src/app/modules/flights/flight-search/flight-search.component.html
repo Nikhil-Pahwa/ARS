@@ -102,7 +102,7 @@
             <div class="price-button-wrapper">
               <div class="price-column">
                 <div class="offer-price">
-                  <span class="price-emphasis">{{flight.totalfare}}</span>
+                  <span class="price-emphasis">{{flight.fare | currency:'INR': true : '1.0-2' }}</span>
                 </div>
               </div>
               <button [routerLink]="['/detail', flight.flightId]" class="select">Select</button>

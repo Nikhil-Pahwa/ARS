@@ -4,5 +4,11 @@
   "DEPARTURE_DATE": "Departure Date",
   "SEARCH": "search",
   "STOP": "stop",
-  "PICK_YOUR_DESTINATION": "Pick your destination"
+  "PICK_YOUR_DESTINATION": "Pick your destination",
+  "REVIEW_YOUR_TRIP": "Review your trip",
+  "TRIP_TOTAL": "Trip Total",
+  "PAY_ONLINE": "Pay Online",
+  "SELECT_PAYMENT_MODE": "Select your payment method",
+  "PAY": "Pay",
+  "BACK": "Back"
 }

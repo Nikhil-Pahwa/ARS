@@ -7,12 +7,14 @@ import { TranslationModule, LocaleService, TranslationService, LocalizationModul
 import { AppComponent } from './app.component';
 import { FlightDetailComponent } from './modules/flights/flight-detail/flight-detail.component';
 import { FlightSearchComponent } from './modules/flights/flight-search/flight-search.component';
+import { PaymentModeComponent } from './shared/components/payment-mode/payment-mode.component';
 import { SharedModule } from './shared/shared.module';
 import { HeaderService } from './shared/components/header';
 
 const appRoutes: Routes = [
   { path: 'search', component: FlightSearchComponent },
-  { path: 'detail/:fid', component: FlightDetailComponent }
+  { path: 'detail/:fid', component: FlightDetailComponent },
+  { path: 'payment/:fid', component: PaymentModeComponent }
 ];
 
 @NgModule({

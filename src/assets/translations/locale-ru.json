@@ -4,5 +4,8 @@
   "DEPARTURE_DATE": "Дата отбытия",
   "SEARCH": "поиск",
   "STOP": "стоп",
-  "PICK_YOUR_DESTINATION": "Выберите пункт назначения"
+  "PICK_YOUR_DESTINATION": "Выберите пункт назначения",
+  "REVIEW_YOUR_TRIP": "Review your trip",
+  "TRIP_TOTAL": "Trip Total",
+  "PAY_ONLINE": "Pay Online"
 }

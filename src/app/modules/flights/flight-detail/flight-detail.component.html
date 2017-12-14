@@ -1,4 +1,20 @@
+<header class="cols-row-header cf page-header">
+  <h1 class="section-header-main">{{ 'REVIEW_YOUR_TRIP' | translate:lang }}</h1>
+</header>
 <div class="main">
+  <section class="tripSummaryContainer">
+    <div class="tripSummary">
+      <h2 class="tripSummaryHeader">Trip Summary</h2>
+      <div class="totalContainer">
+        <div class="packagePriceList">
+          <div class="tripTotals">
+            <span class="trip-total">{{ 'TRIP_TOTAL' | translate:lang }}: {{flight?.fare | currency:'INR': true : '1.0-2' }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn-primary" [routerLink]="['/payment', flight?.flightId]">{{ 'PAY_ONLINE' | translate:lang }}</button>
+  </section>
   <section class="flightSummaryContainer">
     <div class="flex-card">
       <div class="flex-container">
