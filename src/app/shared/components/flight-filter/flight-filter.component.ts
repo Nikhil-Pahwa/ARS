@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
-import { Flight, Carriers } from '../../resources';
+import { Flight, Carriers, Filter } from '../../resources';
 
 @Component({
   selector: 'app-flight-filter',
@@ -9,32 +9,43 @@ import { Flight, Carriers } from '../../resources';
 export class FlightFilterComponent implements OnInit, OnChanges {
 
   @Input() flights: Flight[];
-
+  public flightFilter: Filter[] = [];
   constructor() { }
 
   ngOnInit() {
     console.log(this.flights);
+    // this.flightFilter.push(new Filter('Air India', 'AI', 21));
+    // this.flightFilter.push(new Filter('Jet Airways', 'JA', 10));
   }
 
   ngOnChanges() {
-    console.log(this.flights);
     this.filterAirways();
   }
 
   filterAirways() {
-    let AICount = 0;
-    let JACount = 0;
     this.flights.forEach((flight) => {
-      switch (flight.airline.toUpperCase()) {
-        case Carriers.AI: AICount++;
-          break;
-        case Carriers.JA: JACount++;
-          break;
-        default: console.log('Invalid carrier type');
-      }
-    });
+      let obj = {};
 
-    console.log(AICount);
-    console.log(JACount);
+      // if (this.flightFilter[0].id === flight.carrierId) {
+      //   this.flightFilter.push(new Filter(flight.airline, flight.carrierId, null));
+      // }
+
+      let dd = this.flightFilter.filter((ff) => {
+        return ff.id === flight.carrierId;
+      });
+
+      if (!dd.length) {
+        this.flightFilter.push(new Filter(flight.airline, flight.carrierId, null));
+      }
+
+      //  let airlines = new Map<string, any>();
+      //   switch (cd) {
+      //     case 'AI': airlines.set(Carriers.AI.count, (airlines.get(Carriers.AI.count))++);
+      //       break;
+      //     case 'JA': airlines.set(Carriers.JA, airlines.get(Carriers.JA)++);
+      //       break;  
+      //     default: break;
+      //   }
+    });
   }
 }

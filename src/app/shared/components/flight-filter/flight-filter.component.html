@@ -5,20 +5,11 @@
         <legend class="section-header-sub">
           <span>Airlines included</span>
         </legend>
-        <label class="check filter-option">
+        <label class="check filter-option" *ngFor="let filter of flightFilter">
           <input type="checkbox">
-          <span class="inline-label">Jet Airways (
-            <span class="count">45</span>)</span>
-        </label>
-        <label class="check filter-option">
-          <input type="checkbox">
-          <span class="inline-label">Air India (
-            <span class="count">21</span>)</span>
-        </label>
-        <label class="check filter-option">
-          <input type="checkbox">
-          <span class="inline-label">Hahn Air Systems (
-            <span class="count">6</span>)</span>
+          <span class="inline-label">{{filter.name}}
+            <span class="count" *ngIf="filter.count">({{filter.count}})</span>
+          </span>
         </label>
       </fieldset>
     </div>

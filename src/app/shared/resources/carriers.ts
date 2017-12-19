@@ -1,4 +1,11 @@
 export const Carriers = {
-    'AI': 'AIR INDIA',
-    'JA': 'JET AIRWAYS'
+    'AI': {
+        name: 'AIR INDIA',
+        count: 0,
+    },
+    'JA': {
+        name: 'JET AIRWAYS',
+        count: 0,
+    },
 };
+

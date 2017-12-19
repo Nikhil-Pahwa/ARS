@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { TranslationModule, LocaleService, TranslationService, LocalizationModule } from 'angular-l10n';
 import { HeaderComponent } from './components/';
 import { PaymentModeComponent } from './components/payment-mode/payment-mode.component';
@@ -8,6 +9,8 @@ import { FlightFilterComponent } from './components/flight-filter/flight-filter.
     declarations: [HeaderComponent, PaymentModeComponent, FlightFilterComponent],
     exports: [HeaderComponent, FlightFilterComponent],
     imports: [
+        BrowserModule,
+
         // Translation
         TranslationModule.forRoot(),
         LocalizationModule.forRoot()
