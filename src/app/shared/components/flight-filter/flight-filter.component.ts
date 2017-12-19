@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, OnChanges, EventEmitter, Output } from '@angular/core';
+import { Language } from 'angular-l10n';
 import { Flight, Carriers, Filter } from '../../resources';
 
 @Component({
@@ -7,6 +8,8 @@ import { Flight, Carriers, Filter } from '../../resources';
   styleUrls: ['./flight-filter.component.scss']
 })
 export class FlightFilterComponent implements OnInit, OnChanges {
+
+  @Language() lang;
 
   @Input() flights: Flight[];
   @Output() selectionChanged: EventEmitter<Filter[]> = new EventEmitter<Filter[]>();

@@ -30,7 +30,7 @@
         required="">
     </div>
     <div class="col-md-3 form-left-agileits-submit">
-      <button class="submit" (click)="searchFlights()">{{ 'search' | translate:lang }}</button>
+      <button class="submit" (click)="searchFlights()">{{ 'SEARCH' | translate:lang }}</button>
     </div>
     <div class="clearfix"></div>
   </div>
@@ -40,7 +40,7 @@
 <!-- Flight Listing -->
 <section class="col" *ngIf="filteredList">
   <div class="flight-listing-container">
-    <span>{{filteredList?.length}} records found</span>
+    <span>{{filteredList?.length}} {{ 'RECORDS_FOUND' | translate:lang }}</span>
     <ul class="results-list">
       <li class="offer-listing" *ngFor="let flight of filteredList">
         <div class="flex-content">

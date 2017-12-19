@@ -3,7 +3,7 @@
     <div class="filter-container">
       <fieldset id="airlines" class="filter-set">
         <legend class="section-header-sub">
-          <span>Airlines included</span>
+          <span>{{ 'AIRLINES_INCLUDED' | translate:lang }}</span>
         </legend>
         <label class="check filter-option" *ngFor="let filter of flightFilter">
           <input type="checkbox" [ngModel]="filter.selected" (click)="filter.selected = !filter.selected; filterChanged()">

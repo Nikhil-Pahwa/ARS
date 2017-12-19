@@ -5,7 +5,13 @@
   "SEARCH": "поиск",
   "STOP": "стоп",
   "PICK_YOUR_DESTINATION": "Выберите пункт назначения",
-  "REVIEW_YOUR_TRIP": "Review your trip",
-  "TRIP_TOTAL": "Trip Total",
-  "PAY_ONLINE": "Pay Online"
+  "REVIEW_YOUR_TRIP": "Просмотрите свою поездку",
+  "TRIP_TOTAL": "Общая сумма поездки",
+  "PAY_ONLINE": "Оплатить онлайн",
+  "SELECT_PAYMENT_MODE": "выберите способ оплаты",
+  "PAY": "платить",
+  "BACK": "назад",
+  "RECORDS_FOUND": "найдены записи",
+  "AIRLINES_INCLUDED": "Авиакомпании включены",
+  "TRIP_SUMMARY": "Краткое описание поездки"
 }

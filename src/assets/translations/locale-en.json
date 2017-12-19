@@ -10,5 +10,8 @@
   "PAY_ONLINE": "Pay Online",
   "SELECT_PAYMENT_MODE": "Select your payment method",
   "PAY": "Pay",
-  "BACK": "Back"
+  "BACK": "Back",
+  "RECORDS_FOUND": "records found",
+  "AIRLINES_INCLUDED": "Airlines included",
+  "TRIP_SUMMARY": "Trip Summary"
 }
