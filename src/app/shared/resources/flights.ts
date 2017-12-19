@@ -1,5 +1,5 @@
 export interface RemoteFare {
-    grossamount: string;
+    grossamount: number;
 }
 
 export interface RemoteFlight {
@@ -30,7 +30,7 @@ export interface Flight {
     flightId: string;
     destination: string;
     styleUrl: string;
-    fare: string;
+    fare: number;
     carrierId: string;
 }
 
@@ -47,7 +47,7 @@ export class Flight implements Flight {
         public flightId: string,
         public destination: string,
         public styleUrl: string,
-        public fare: string,
+        public fare: number,
         public carrierId: string
     ) {
     }

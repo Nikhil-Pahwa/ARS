@@ -38,8 +38,9 @@
 <!-- banner END-->
 <app-flight-filter *ngIf="filteredList" [flights]=filteredList (selectionChanged)="filterSearch($event)"></app-flight-filter>
 <!-- Flight Listing -->
-<section class="col">
+<section class="col" *ngIf="filteredList">
   <div class="flight-listing-container">
+    <span>{{filteredList?.length}} records found</span>
     <ul class="results-list">
       <li class="offer-listing" *ngFor="let flight of filteredList">
         <div class="flex-content">

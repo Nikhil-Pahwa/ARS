@@ -1,4 +1,5 @@
 {
+  "_comment": "Logos are placed locally for demo purpose",
   "data": {
     "returnflights": [],
     "onwardflights": [{
@@ -29,7 +30,7 @@
         "PromotionId": "",
         "fid": 4,
         "styleUrl": "assets/css/external_domain_styles/air_india.css",
-        "logoUrl": "//images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/AI_sq.svg",
+        "logoUrl": "assets/images/airlines/AI_sq.svg",
         "fare": {
           "grossamount": 4886,
           "totalbasefare": 4425,
@@ -76,7 +77,7 @@
         "duration": "20h 35m",
         "platingcarrier": "",
         "qtype": "",
-        "logoUrl": "//images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/9W_sq.svg",
+        "logoUrl": "assets/images/airlines/JA_sq.svg",
         "arrterminal": "",
         "flightno": "768",
         "destination": "HYD",
@@ -239,7 +240,7 @@
         "carrierId": "AI",
         "airline": "Air India",
         "styleUrl": "assets/css/external_domain_styles/air_india.css",
-        "logoUrl": "//images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/AI_sq.svg",
+        "logoUrl": "assets/images/airlines/AI_sq.svg",
         "provider": "",
         "PromotionId": "",
         "fare": {
@@ -331,7 +332,7 @@
             "styleUrl": "assets/css/external_domain_styles/jet_airways.css",
             "provider": "",
             "PromotionId": "",
-            "logoUrl": "//images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/9W_sq.svg",
+            "logoUrl": "assets/images/airlines/JA_sq.svg",
             "fare": {
               "totalsurcharge": 0,
               "totalfare": 0,
@@ -393,7 +394,7 @@
         "stops": "2",
         "seatsavailable": "1",
         "carrierId": "JA",
-        "logoUrl": "//images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/9W_sq.svg",
+        "logoUrl": "assets/images/airlines/JA_sq.svg",
         "airline": "Jet Airways",
         "styleUrl": "assets/css/external_domain_styles/jet_airways.css",
         "provider": "",
@@ -485,7 +486,7 @@
             "carrierId": "JA",
             "airline": "Jet Airways",
             "styleUrl": "assets/css/external_domain_styles/jet_airways.css",
-            "logoUrl": "//images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/9W_sq.svg",
+            "logoUrl": "assets/images/airlines/JA_sq.svg",
             "provider": "",
             "PromotionId": "",
             "fare": {
@@ -549,7 +550,7 @@
         "stops": "2",
         "seatsavailable": "1",
         "carrierId": "JA",
-        "logoUrl": "//images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/9W_sq.svg",
+        "logoUrl": "assets/images/airlines/JA_sq.svg",
         "airline": "Jet Airways",
         "styleUrl": "assets/css/external_domain_styles/jet_airways.css",
         "provider": "",
@@ -706,7 +707,7 @@
         "carrierId": "AI",
         "airline": "Air India",
         "styleUrl": "assets/css/external_domain_styles/air_india.css",
-        "logoUrl": "//images.trvl-media.com/media/content/expus/graphics/static_content/fusion/v0.1b/images/airlines/vector/s/AI_sq.svg",
+        "logoUrl": "assets/images/airlines/AI_sq.svg",
         "provider": "",
         "PromotionId": "",
         "fare": {

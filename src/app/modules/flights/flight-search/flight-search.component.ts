@@ -39,11 +39,15 @@ export class FlightSearchComponent implements OnInit {
     this.filteredList = [];
     filters.forEach((filter: Filter) => {
       let items = this.flightsList.filter(function (flight) {
-        console.log(flight);
         return (filter.selected && (flight.carrierId === filter.id));
       });
-      console.log(items);
+
       this.filteredList = this.filteredList.concat(items);
+
+      this.filteredList.sort(function (a, b) {
+        return a.fare - b.fare;
+      });
+
     });
   }
 }
