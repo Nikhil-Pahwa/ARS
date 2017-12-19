@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Language } from 'angular-l10n';
 
 import { FlightService } from '../';
-import { Flight } from '../../../shared/resources/';
+import { Flight, Filter } from '../../../shared/resources/';
 import { HeaderService } from '../../../shared/components/';
 
 declare let jQuery: any;
@@ -18,6 +18,7 @@ export class FlightSearchComponent implements OnInit {
   @Language() lang;
 
   public flightsList: Flight[];
+  public filteredList: Flight[];
 
   constructor(private flightService: FlightService, private headerService: HeaderService) { }
 
@@ -30,7 +31,19 @@ export class FlightSearchComponent implements OnInit {
     this.flightService.getFlightResults()
       .subscribe((data: Flight[]) => {
         this.flightsList = data;
+        this.filteredList = data;
       });
   }
 
+  filterSearch(filters: Filter[]) {
+    this.filteredList = [];
+    filters.forEach((filter: Filter) => {
+      let items = this.flightsList.filter(function (flight) {
+        console.log(flight);
+        return (filter.selected && (flight.carrierId === filter.id));
+      });
+      console.log(items);
+      this.filteredList = this.filteredList.concat(items);
+    });
+  }
 }

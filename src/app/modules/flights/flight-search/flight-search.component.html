@@ -36,12 +36,12 @@
   </div>
 </div>
 <!-- banner END-->
-<app-flight-filter *ngIf="flightsList" [flights]=flightsList></app-flight-filter>
+<app-flight-filter *ngIf="filteredList" [flights]=filteredList (selectionChanged)="filterSearch($event)"></app-flight-filter>
 <!-- Flight Listing -->
 <section class="col">
   <div class="flight-listing-container">
     <ul class="results-list">
-      <li class="offer-listing" *ngFor="let flight of flightsList">
+      <li class="offer-listing" *ngFor="let flight of filteredList">
         <div class="flex-content">
           <div class="flex-area-primary">
             <div class="flex-card flex-listing">
