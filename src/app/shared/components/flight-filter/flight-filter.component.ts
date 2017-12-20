@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, OnChanges, EventEmitter, Output } from '@angular/core';
 import { Language } from 'angular-l10n';
+
 import { Flight, Carriers, Filter } from '../../resources';
 
 @Component({

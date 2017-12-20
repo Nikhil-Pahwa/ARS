@@ -27,8 +27,7 @@ export class FlightDetailComponent implements OnInit, OnDestroy {
     let fid = this.route.snapshot.paramMap.get('fid');
     this.flightService.getFlightResults()
       .subscribe((data: Flight[]) => {
-        this.flight = data.filter(d => (d.flightId == fid))[0];
-        console.log(this.flight);
+        this.flight = data.filter(d => (d.flightId.toString() === fid))[0];
         this.loadCSS(this.flight.styleUrl);
         this.headerService.setLogo(this.flight.logoUrl);
       });
@@ -48,22 +47,23 @@ export class FlightDetailComponent implements OnInit, OnDestroy {
     let style = head.getElementsByTagName('style')[0];
 
     // Check if the same style sheet has been loaded already.
-    let isLoaded = false;
-    for (var i = 0; i < links.length; i++) {
-      var node = links[i];
+    let isAlreadyLoaded = false;
+    for (let i = 0; i < links.length; i++) {
+      let node = links[i];
       if (node.href.indexOf(link.href) > -1) {
-        isLoaded = true;
+        isAlreadyLoaded = true;
       }
     }
-    if (isLoaded) return;
-    //head.insertBefore(link, style);
-    head.appendChild(link);
+
+    if (isAlreadyLoaded) {
+      return;
+    } else {
+      head.appendChild(link);
+    }
   }
 
   ngOnDestroy() {
     let el = document.getElementById('temp');
     el.remove();
   }
-
-
 }

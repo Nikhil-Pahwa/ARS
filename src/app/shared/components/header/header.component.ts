@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { HeaderService } from './header.service';
 import { Language } from 'angular-l10n';
+
+import { HeaderService } from './header.service';
 
 @Component({
   selector: 'ars-header',
