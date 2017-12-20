@@ -22,5 +22,7 @@
   "HOTEL": "Hotels",
   "CAR": "Car Hire",
   "REWARDS": "Rewards",
-  "MYCOCKPIT": "My cockpit"
+  "MYCOCKPIT": "My cockpit",
+  "SELECT_VALUE": "Select a value",
+  "SELECT_DATE": "Select valid date"
 }

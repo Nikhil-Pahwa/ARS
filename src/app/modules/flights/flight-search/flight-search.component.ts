@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Language } from 'angular-l10n';
 
 import { FlightService } from '../';
-import { Flight, Filter } from '../../../shared/resources/';
+import { Flight, Filter, Search, EmptySearch } from '../../../shared/resources/';
 import { HeaderService } from '../../../shared/components/';
 
 declare let jQuery: any;
@@ -19,6 +19,8 @@ export class FlightSearchComponent implements OnInit {
 
   public flightsList: Flight[];
   public filteredList: Flight[];
+  public search: Search = EmptySearch;
+  public isSubmitted: boolean = false;
 
   constructor(private flightService: FlightService, private headerService: HeaderService) { }
 
@@ -27,12 +29,23 @@ export class FlightSearchComponent implements OnInit {
     this.headerService.setLogo('assets/images/ARS-logo.png');
   }
 
+  get datepickerValue(): string {
+    return (document.getElementById('datepicker1') as HTMLInputElement).value;
+  }
+
   searchFlights() {
-    this.flightService.getFlightResults()
-      .subscribe((data: Flight[]) => {
-        this.flightsList = data;
-        this.filteredList = data;
-      });
+    this.isSubmitted = true;
+    if (this.search.from !== '-1' && this.search.to !== '-1' && this.validateDate()) {
+      this.flightService.getFlightResults()
+        .subscribe((data: Flight[]) => {
+          this.flightsList = data;
+          this.filteredList = data;
+        });
+    }
+  }
+
+  validateDate() {
+    return (new Date(this.datepickerValue).getTime() >= new Date().getTime());
   }
 
   filterSearch(filters: Filter[]) {

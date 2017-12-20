@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 import { TranslationModule, LocaleService, TranslationService, LocalizationModule } from 'angular-l10n';
 
 import { AppComponent } from './app.component';
@@ -30,7 +31,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     HttpModule,
     SharedModule,
-
+    FormsModule,
     // Translation
     TranslationModule.forRoot(),
     LocalizationModule.forRoot(),
