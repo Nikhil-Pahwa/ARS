@@ -12,9 +12,11 @@ import { SharedModule } from './shared/shared.module';
 import { HeaderService } from './shared/components/header';
 
 const appRoutes: Routes = [
+  { path: '', redirectTo: '/search', pathMatch: 'full' },
   { path: 'search', component: FlightSearchComponent },
   { path: 'detail/:fid', component: FlightDetailComponent },
-  { path: 'payment/:fid', component: PaymentModeComponent }
+  { path: 'payment/:fid', component: PaymentModeComponent },
+  { path: '**', redirectTo: '/search' }
 ];
 
 @NgModule({
