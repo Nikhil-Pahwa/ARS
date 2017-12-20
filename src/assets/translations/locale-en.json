@@ -13,5 +13,8 @@
   "BACK": "Back",
   "RECORDS_FOUND": "records found",
   "AIRLINES_INCLUDED": "Airlines included",
-  "TRIP_SUMMARY": "Trip Summary"
+  "TRIP_SUMMARY": "Trip Summary",
+  "FROM": "From",
+  "TO": "To",
+  "SELECT": "Select"
 }

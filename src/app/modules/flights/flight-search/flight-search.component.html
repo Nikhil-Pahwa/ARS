@@ -55,20 +55,20 @@
                 <div class="flex-area-primary">
                   <div class="primary-block">
                     <div class="primary">
-                      <span class="departure-time">{{flight.deptime}}</span>
+                      <span class="departure-time">{{flight?.deptime}}</span>
                       -
-                      <span class="arrival-time">{{flight.arrtime}}</span>
+                      <span class="arrival-time">{{flight?.arrtime}}</span>
                     </div>
-                    <div class="secondary">{{flight.airline}}</div>
+                    <div class="secondary">{{flight?.airline}}</div>
                   </div>
                   <div class="primary-block">
                     <div class="primary duration-emphasis">
-                      <span class="departure-time">{{flight.deptime}}</span>
+                      <span class="departure-time">{{flight?.deptime}}</span>
                     </div>
                     <div class="secondary"></div>
                   </div>
                   <div class="primary-block">
-                    {{flight.stops}} {{ 'STOP' | translate:lang }}
+                    {{flight?.stops}} {{ 'STOP' | translate:lang }}
                   </div>
                 </div>
               </div>
@@ -78,10 +78,10 @@
             <div class="price-button-wrapper">
               <div class="price-column">
                 <div class="offer-price">
-                  <span class="price-emphasis">{{flight.fare | currency:'INR': true : '1.0-2' }}</span>
+                  <span class="price-emphasis">{{flight?.fare | currency:'INR': true : '1.0-2' }}</span>
                 </div>
               </div>
-              <button [routerLink]="['/detail', flight.flightId]" class="select">Select</button>
+              <button [routerLink]="['/detail', flight.flightId]" class="select">{{ 'SELECT' | translate:lang }}</button>
             </div>
           </div>
         </div>

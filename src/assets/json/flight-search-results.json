@@ -55,10 +55,12 @@
         "bookingclass": "S ",
         "DataSource": "estream",
         "multicitysearch": "",
-        "depdate": "2017-12-10t1320",
+        "depdate": "Fri, Dec 15",
         "arrtime": "14:35",
         "arrdate": "2017-12-10t1435",
-        "TravelTime": ""
+        "TravelTime": "",
+        "departureAirport": "Indira Gandhi Intl.",
+        "arrivalAirport": "Dabok"
       },
       {
         "origin": "DEL",
@@ -146,10 +148,12 @@
             "bookingclass": "S ",
             "DataSource": "estream",
             "multicitysearch": "",
-            "depdate": "2017-12-11t1215",
+            "depdate": "Fri, Dec 15",
             "arrtime": "13:40",
             "arrdate": "2017-12-11t1340",
-            "TravelTime": ""
+            "TravelTime": "",
+            "departureAirport": "Indira Gandhi Intl.",
+            "arrivalAirport": "Dabok"
           },
           {
             "origin": "BOM",
@@ -194,10 +198,12 @@
             "bookingclass": "S ",
             "DataSource": "estream",
             "multicitysearch": "",
-            "depdate": "2017-12-11t1615",
+            "depdate": "Fri, Dec 15",
             "arrtime": "17:35",
             "arrdate": "2017-12-11t1735",
-            "TravelTime": ""
+            "TravelTime": "",
+            "departureAirport": "Indira Gandhi Intl.",
+            "arrivalAirport": "Dabok"
           }
         ],
         "aircraftType": "73H",
@@ -209,10 +215,12 @@
         "bookingclass": "S ",
         "DataSource": "estream",
         "multicitysearch": "",
-        "depdate": "2017-12-10t2100",
+        "depdate": "Fri, Dec 15",
         "arrtime": "23:10",
         "arrdate": "2017-12-10t2310",
-        "TravelTime": ""
+        "TravelTime": "",
+        "departureAirport": "Indira Gandhi Intl.",
+        "arrivalAirport": "Dabok"
       },
       {
         "origin": "DEL",
@@ -300,10 +308,12 @@
             "bookingclass": "S ",
             "DataSource": "estream",
             "multicitysearch": "",
-            "depdate": "2017-12-11t0635",
+            "depdate": "Fri, Dec 15",
             "arrtime": "08:05",
             "arrdate": "2017-12-11t0805",
-            "TravelTime": ""
+            "TravelTime": "",
+            "departureAirport": "Indira Gandhi Intl.",
+            "arrivalAirport": "Dabok"
           },
           {
             "origin": "BOM",
@@ -350,10 +360,12 @@
             "bookingclass": "S ",
             "DataSource": "estream",
             "multicitysearch": "",
-            "depdate": "2017-12-11t1615",
+            "depdate": "Fri, Dec 15",
             "arrtime": "17:35",
             "arrdate": "2017-12-11t1735",
-            "TravelTime": ""
+            "TravelTime": "",
+            "departureAirport": "Indira Gandhi Intl.",
+            "arrivalAirport": "Dabok"
           }
         ],
         "aircraftType": "73H",
@@ -365,10 +377,12 @@
         "bookingclass": "S ",
         "DataSource": "estream",
         "multicitysearch": "",
-        "depdate": "2017-12-10t2100",
+        "depdate": "Fri, Dec 15",
         "arrtime": "23:10",
         "arrdate": "2017-12-10t2310",
-        "TravelTime": ""
+        "TravelTime": "",
+        "departureAirport": "Indira Gandhi Intl.",
+        "arrivalAirport": "Dabok"
       },
       {
         "origin": "DEL",
@@ -456,10 +470,12 @@
             "bookingclass": "N ",
             "DataSource": "estream",
             "multicitysearch": "",
-            "depdate": "2017-12-10t2130",
+            "depdate": "Fri, Dec 15",
             "arrtime": "22:45",
             "arrdate": "2017-12-10t2245",
-            "TravelTime": ""
+            "TravelTime": "",
+            "departureAirport": "Indira Gandhi Intl.",
+            "arrivalAirport": "Dabok"
           },
           {
             "origin": "BOM",
@@ -506,10 +522,12 @@
             "bookingclass": "N ",
             "DataSource": "estream",
             "multicitysearch": "",
-            "depdate": "2017-12-11t0505",
+            "depdate": "Fri, Dec 15",
             "arrtime": "06:20",
             "arrdate": "2017-12-11t0620",
-            "TravelTime": ""
+            "TravelTime": "",
+            "departureAirport": "Indira Gandhi Intl.",
+            "arrivalAirport": "Dabok"
           }
         ],
         "aircraftType": "73H",
@@ -521,10 +539,12 @@
         "bookingclass": "N ",
         "DataSource": "estream",
         "multicitysearch": "",
-        "depdate": "2017-12-10t1925",
+        "depdate": "Fri, Dec 15",
         "arrtime": "21:00",
         "arrdate": "2017-12-10t2100",
-        "TravelTime": ""
+        "TravelTime": "",
+        "departureAirport": "Indira Gandhi Intl.",
+        "arrivalAirport": "Dabok"
       },
       {
         "origin": "DEL",
@@ -612,10 +632,12 @@
             "bookingclass": "L ",
             "DataSource": "estream",
             "multicitysearch": "",
-            "depdate": "2017-12-10t2250",
+            "depdate": "Fri, Dec 15",
             "arrtime": "00:30",
-            "arrdate": "2017-12-11t0030",
-            "TravelTime": ""
+            "arrdate": "Fri, Dec 15",
+            "TravelTime": "",
+            "departureAirport": "Indira Gandhi Intl.",
+            "arrivalAirport": "Dabok"
           },
           {
             "origin": "BOM",
@@ -661,10 +683,12 @@
             "bookingclass": "L ",
             "DataSource": "estream",
             "multicitysearch": "",
-            "depdate": "2017-12-11t0505",
+            "depdate": "Fri, Dec 15",
             "arrtime": "06:20",
-            "arrdate": "2017-12-11t0620",
-            "TravelTime": ""
+            "arrdate": "Fri, Dec 15",
+            "TravelTime": "",
+            "departureAirport": "Indira Gandhi Intl.",
+            "arrivalAirport": "Dabok"
           }
         ],
         "aircraftType": "73H",
@@ -676,10 +700,12 @@
         "bookingclass": "L ",
         "DataSource": "estream",
         "multicitysearch": "",
-        "depdate": "2017-12-10t1920",
+        "depdate": "Fri, Dec 15",
         "arrtime": "22:05",
-        "arrdate": "2017-12-10t2205",
-        "TravelTime": ""
+        "arrdate": "Fri, Dec 15",
+        "TravelTime": "",
+        "departureAirport": "Indira Gandhi Intl.",
+        "arrivalAirport": "Dabok"
       },
       {
         "origin": "DEL",
@@ -767,10 +793,12 @@
             "bookingclass": "N ",
             "DataSource": "estream",
             "multicitysearch": "",
-            "depdate": "2017-12-10t2130",
+            "depdate": "Fri, Dec 15",
             "arrtime": "22:45",
-            "arrdate": "2017-12-10t2245",
-            "TravelTime": ""
+            "arrdate": "Fri, Dec 15",
+            "TravelTime": "",
+            "departureAirport": "Indira Gandhi Intl.",
+            "arrivalAirport": "Dabok"
           },
           {
             "origin": "BOM",
@@ -815,10 +843,12 @@
             "bookingclass": "N ",
             "DataSource": "estream",
             "multicitysearch": "",
-            "depdate": "2017-12-11t1615",
+            "depdate": "Fri, Dec 15",
             "arrtime": "17:35",
-            "arrdate": "2017-12-11t1735",
-            "TravelTime": ""
+            "arrdate": "Fri, Dec 15",
+            "TravelTime": "",
+            "departureAirport": "Indira Gandhi Intl.",
+            "arrivalAirport": "Dabok"
           }
         ],
         "aircraftType": "73H",
@@ -830,10 +860,12 @@
         "bookingclass": "N ",
         "DataSource": "estream",
         "multicitysearch": "",
-        "depdate": "2017-12-10t1925",
+        "depdate": "Fri, Dec 15",
         "arrtime": "21:00",
-        "arrdate": "2017-12-10t2100",
-        "TravelTime": ""
+        "arrdate": "Fri, Dec 15",
+        "TravelTime": "",
+        "departureAirport": "Indira Gandhi Intl.",
+        "arrivalAirport": "Dabok"
       }
     ]
   },

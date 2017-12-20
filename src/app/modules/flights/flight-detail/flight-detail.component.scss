@@ -78,6 +78,9 @@
     .arrival {
       width: 144px;
       float: left;
+      .time {
+        font-size: 1.4em;
+      }
     }
     .durationStops {
       padding-left: .7em
