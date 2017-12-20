@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnChanges, EventEmitter, Output } from '@angular/core';
+import { Component, Input, OnChanges, EventEmitter, Output } from '@angular/core';
 import { Language } from 'angular-l10n';
 
 import { Flight, Carriers, Filter } from '../../resources';
@@ -8,7 +8,7 @@ import { Flight, Carriers, Filter } from '../../resources';
   templateUrl: './flight-filter.component.html',
   styleUrls: ['./flight-filter.component.scss']
 })
-export class FlightFilterComponent implements OnInit, OnChanges {
+export class FlightFilterComponent implements OnChanges {
 
   @Language() lang;
 
@@ -16,16 +16,18 @@ export class FlightFilterComponent implements OnInit, OnChanges {
   @Output() selectionChanged: EventEmitter<Filter[]> = new EventEmitter<Filter[]>();
 
   public flightFilter: Filter[] = [];
-  constructor() { }
 
-  ngOnInit() {
-  }
+  constructor() { }
 
   ngOnChanges() {
     this.filterAirways();
   }
 
-  filterAirways() {
+  filterChanged() {
+    this.selectionChanged.emit(this.flightFilter);
+  }
+
+  private filterAirways() {
     this.flights.forEach((flight) => {
       let dd = this.flightFilter.filter((ff) => {
         return ff.id === flight.carrierId;
@@ -34,9 +36,5 @@ export class FlightFilterComponent implements OnInit, OnChanges {
         this.flightFilter.push(new Filter(flight.airline, flight.carrierId, null, true));
       }
     });
-  }
-
-  filterChanged() {
-    this.selectionChanged.emit(this.flightFilter);
   }
 }

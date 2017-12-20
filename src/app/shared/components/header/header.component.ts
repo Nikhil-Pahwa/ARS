@@ -21,5 +21,4 @@ export class HeaderComponent implements OnInit {
       this.logoUrl = logo;
     });
   }
-
 }

@@ -33,8 +33,7 @@ export class FlightDetailComponent implements OnInit, OnDestroy {
       });
   }
 
-
-  loadCSS(url) {
+  private loadCSS(url) {
     // Create link
     let link = document.createElement('link');
     link.href = url;

@@ -47,7 +47,6 @@ export class FlightSearchComponent implements OnInit {
       this.filteredList.sort(function (a, b) {
         return a.fare - b.fare;
       });
-
     });
   }
 }
