@@ -1,7 +1,7 @@
 import { Component, Input, OnChanges, EventEmitter, Output } from '@angular/core';
 import { Language } from 'angular-l10n';
 
-import { Flight, Carriers, Filter } from '../../resources';
+import { Flight, Filter } from '../../resources';
 
 @Component({
   selector: 'flight-filter',

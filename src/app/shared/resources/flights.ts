@@ -62,6 +62,8 @@ export class Flight implements Flight {
     }
 }
 
+export let EmptyFlight = new Flight('', '', '', null, '', '', null, '', '', '', '', null, '', '', '', '');
+
 export function FlightFromRemote(flight: RemoteFlight): Flight {
     return new Flight(flight.origin, flight.deptime, flight.duration,
         flight.flightno, flight.airline, flight.arrtime, flight.stops,

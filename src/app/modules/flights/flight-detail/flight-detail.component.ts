@@ -4,7 +4,7 @@ import 'rxjs/add/operator/switchMap';
 import { Language } from 'angular-l10n';
 
 import { FlightService } from '../';
-import { Flight } from '../../../shared/resources/';
+import { Flight, EmptyFlight } from '../../../shared/resources/';
 import { HeaderService } from '../../../shared/components/';
 
 @Component({
@@ -18,7 +18,7 @@ export class FlightDetailComponent implements OnInit, OnDestroy {
 
   @Language() lang;
 
-  public flight: Flight;
+  public flight: Flight = EmptyFlight;
 
   constructor(private route: ActivatedRoute, private router: Router,
     private flightService: FlightService, private headerService: HeaderService) { }
