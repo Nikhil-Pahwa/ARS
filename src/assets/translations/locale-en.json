@@ -16,5 +16,11 @@
   "TRIP_SUMMARY": "Trip Summary",
   "FROM": "From",
   "TO": "To",
-  "SELECT": "Select"
+  "SELECT": "Select",
+  "SHOP": "Shop",
+  "CASHANDMILES": "Cash and miles",
+  "HOTEL": "Hotels",
+  "CAR": "Car Hire",
+  "REWARDS": "Rewards",
+  "MYCOCKPIT": "My cockpit"
 }
