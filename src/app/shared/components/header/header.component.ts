@@ -3,7 +3,7 @@ import { HeaderService } from './header.service';
 import { Language } from 'angular-l10n';
 
 @Component({
-  selector: 'app-header',
+  selector: 'ars-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })

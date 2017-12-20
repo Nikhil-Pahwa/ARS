@@ -3,7 +3,7 @@ import { Location } from '@angular/common';
 import { Language } from 'angular-l10n';
 
 @Component({
-  selector: 'app-payment-mode',
+  selector: 'payment-mode',
   templateUrl: './payment-mode.component.html',
   styleUrls: ['./payment-mode.component.scss']
 })

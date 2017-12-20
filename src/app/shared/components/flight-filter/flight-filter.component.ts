@@ -3,7 +3,7 @@ import { Language } from 'angular-l10n';
 import { Flight, Carriers, Filter } from '../../resources';
 
 @Component({
-  selector: 'app-flight-filter',
+  selector: 'flight-filter',
   templateUrl: './flight-filter.component.html',
   styleUrls: ['./flight-filter.component.scss']
 })

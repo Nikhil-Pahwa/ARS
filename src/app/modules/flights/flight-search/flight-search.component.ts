@@ -8,7 +8,7 @@ import { HeaderService } from '../../../shared/components/';
 declare let jQuery: any;
 
 @Component({
-  selector: 'app-flight-search',
+  selector: 'flight-search',
   templateUrl: './flight-search.component.html',
   styleUrls: ['./flight-search.component.scss'],
   providers: [FlightService]

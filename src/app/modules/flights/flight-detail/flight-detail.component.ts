@@ -8,7 +8,7 @@ import { Flight } from '../../../shared/resources/';
 import { HeaderService } from '../../../shared/components/';
 
 @Component({
-  selector: 'app-flight-detail',
+  selector: 'flight-detail',
   templateUrl: './flight-detail.component.html',
   styleUrls: ['./flight-detail.component.scss'],
   providers: [FlightService],

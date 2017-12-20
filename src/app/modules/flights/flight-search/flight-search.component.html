@@ -36,7 +36,7 @@
   </div>
 </div>
 <!-- banner END-->
-<app-flight-filter *ngIf="filteredList" [flights]=filteredList (selectionChanged)="filterSearch($event)"></app-flight-filter>
+<flight-filter *ngIf="filteredList" [flights]=filteredList (selectionChanged)="filterSearch($event)"></flight-filter>
 <!-- Flight Listing -->
 <section class="col" *ngIf="filteredList">
   <div class="flight-listing-container">
