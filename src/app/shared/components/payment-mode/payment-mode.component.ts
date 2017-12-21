@@ -7,6 +7,7 @@ import { Language } from 'angular-l10n';
   templateUrl: './payment-mode.component.html',
   styleUrls: ['./payment-mode.component.scss']
 })
+
 export class PaymentModeComponent {
 
   @Language() lang;

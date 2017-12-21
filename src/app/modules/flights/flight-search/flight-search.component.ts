@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Language } from 'angular-l10n';
 
-import { FlightService } from '../';
+import { FlightService } from '../flight.service';
 import { Flight, Filter, Search, EmptySearch } from '../../../shared/resources/';
 import { HeaderService } from '../../../shared/components/';
 
@@ -13,6 +13,7 @@ declare let jQuery: any;
   styleUrls: ['./flight-search.component.scss'],
   providers: [FlightService]
 })
+
 export class FlightSearchComponent implements OnInit {
 
   @Language() lang;

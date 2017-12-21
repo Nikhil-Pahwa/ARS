@@ -8,6 +8,7 @@ import { Flight, Filter } from '../../resources';
   templateUrl: './flight-filter.component.html',
   styleUrls: ['./flight-filter.component.scss']
 })
+
 export class FlightFilterComponent implements OnChanges {
 
   @Language() lang;

@@ -8,6 +8,7 @@ import { HeaderService } from './header.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
+
 export class HeaderComponent implements OnInit {
 
   @Language() lang;

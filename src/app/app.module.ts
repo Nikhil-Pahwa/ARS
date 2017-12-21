@@ -6,8 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { TranslationModule, LocaleService, TranslationService, LocalizationModule } from 'angular-l10n';
 
 import { AppComponent } from './app.component';
-import { FlightDetailComponent } from './modules/flights/flight-detail/flight-detail.component';
-import { FlightSearchComponent } from './modules/flights/flight-search/flight-search.component';
+import { FlightDetailComponent, FlightSearchComponent } from './modules/flights/';
 import { PaymentModeComponent } from './shared/components/payment-mode/payment-mode.component';
 import { SharedModule } from './shared/shared.module';
 import { HeaderService } from './shared/components/header';
