@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Language } from 'angular-l10n';
 
 import { HeaderService } from './header.service';
@@ -6,7 +6,8 @@ import { HeaderService } from './header.service';
 @Component({
   selector: 'ars-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 
 export class HeaderComponent implements OnInit {

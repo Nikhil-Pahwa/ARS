@@ -80,8 +80,22 @@ section.col {
 }
 
 .search-container {
+  margin-top: 35px;
+  background-color: #ededed;
+}
+
+.result-listing {
+  margin: 0 auto;
   width: 80%;
-  margin: 65px auto;
+  padding-top: 25px;
+  .heading {
+    float: left;
+    width: 100%;
+    font-size: 1.17647059em;
+    color: #00355f;
+    font-weight: 700;
+    padding-bottom: 15px;
+  }
 }
 
 .col {

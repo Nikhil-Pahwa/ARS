@@ -11,7 +11,7 @@
   "SELECT_PAYMENT_MODE": "Select your payment method",
   "PAY": "Pay",
   "BACK": "Back",
-  "RECORDS_FOUND": "records found",
+  "SELECT_DEPARTURE": "Select your departure to",
   "AIRLINES_INCLUDED": "Airlines included",
   "TRIP_SUMMARY": "Trip Summary",
   "FROM": "From",
@@ -24,5 +24,6 @@
   "REWARDS": "Rewards",
   "MYCOCKPIT": "My cockpit",
   "SELECT_VALUE": "Select a value",
-  "SELECT_DATE": "Select valid date"
+  "SELECT_DATE": "Select valid date",
+  "DIRECT": "DIRECT"
 }
