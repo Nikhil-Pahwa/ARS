@@ -40,8 +40,8 @@
         span:first-child {
           color: #616161;
           display: inline-block;
-          margin-right: .58823529em;
-          min-width: 4.23529412em;
+          margin-right: .5em;
+          min-width: 4.2em;
         }
       }
     }
@@ -91,6 +91,26 @@
     }
     .durationStops {
       padding-left: .7em
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .tripSummaryContainer {
+    margin-bottom: 30px;
+  }
+  .flex-area-primary {
+    .odPair {
+      clear: both;
+      padding: 14px 0;
+    }
+    .flightSummary-timeDuration {
+      .departure {
+        width: 5em;
+      }
+      .arrival {
+        width: 5em;
+      }
     }
   }
 }

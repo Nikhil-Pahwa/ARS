@@ -24,6 +24,6 @@
   "REWARDS": "Rewards",
   "MYCOCKPIT": "My cockpit",
   "SELECT_VALUE": "Select a value",
-  "SELECT_DATE": "Select valid date",
+  "SELECT_DATE": "Select valid date or select date greater than current date",
   "DIRECT": "DIRECT"
 }

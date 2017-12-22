@@ -3,8 +3,8 @@
   background: #ffa200;
   border: solid 1px #ffa200;
   color: #FFFFFF;
-  padding: .64em 2em;
-  font-size: .79em;
+  padding: .6em 2em;
+  font-size: .8em;
   outline: none;
   -webkit-transition: 0.5s all;
   -moz-transition: 0.5s all;
@@ -38,21 +38,21 @@
   .flex-card {
     display: flex;
     .flex-figure {
-      width: 3.52941176em;
+      width: 3.5em;
       img {
-        width: 3.52941176em;
-        padding: .70588235em;
+        width: 3.5em;
+        padding: .7em;
       }
     }
     .flex-area-primary .primary-block {
       display: inline-block;
       min-width: 9em;
       vertical-align: top;
-      padding-right: .29411765em;
+      padding-right: .3em;
     }
   }
   .flex-area-secondary {
-    padding: .70588235em .70588235em 0 0;
+    padding: .7em .7em 0 0;
     .price-button-wrapper {
       display: table-row;
       float: right;
@@ -122,5 +122,15 @@ section.col {
     padding-bottom: 20px;
     font-size: 23px;
     text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .results-list {
+    padding: 0;
+  }
+  section.col {
+    clear: both;
+    width: 100%;
   }
 }

@@ -1,6 +1,6 @@
 # Airline Reservation system
 
-This is the YCompany airline reservation system portal covering minor functionalaties such as search and book the flight. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.5.
+This is the YCompany airline reservation system portal covering minor functionalaties such as search and book the flight. In this application when user select the flight the corresponding vendor's style and brand image gets loaded in detail page. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.5.
 
 ## Features 
 * Localization support for multiple languages
@@ -9,7 +9,7 @@ This is the YCompany airline reservation system portal covering minor functional
 * Different major browser supported
 * Automation build
 * Adheres to [Angular's official guideline](https://angular.io/guide/styleguide) 
-* Test cases implemented for major componenents
+* Test cases implemented for flight search component
 * Zero linting errors
 * Run in both development and production mode
 
