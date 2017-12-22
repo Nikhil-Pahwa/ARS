@@ -1,46 +1,44 @@
 <header>
   <!-- navigation -->
-  <div class="w3_navigation">
-    <nav class="navbar navbar-default">
-      <div class="navbar-header navbar-left">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <h1>
-          <a [routerLink]="['/search']">
-            <img class="logo" src={{logoUrl}}/>
-          </a>
-        </h1>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-        <nav class="cl-effect-4" id="cl-effect-4">
-          <ul class="nav navbar-nav menu__list">
-            <li>
-              <a href="javascript:void(0);">{{ 'SHOP' | translate:lang }}</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">{{ 'CASHANDMILES' | translate:lang }}</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">{{ 'HOTEL' | translate:lang }}</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">{{ 'CAR' | translate:lang }}</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">{{ 'REWARDS' | translate:lang }}</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">{{ 'MYCOCKPIT' | translate:lang }}</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </nav>
-  </div>
+  <nav class="navbar navbar-default">
+    <div class="navbar-header navbar-left">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <h1>
+        <a [routerLink]="['/search']">
+          <img class="logo" src={{logoUrl}}/>
+        </a>
+      </h1>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+      <nav class="cl-effect-4" id="cl-effect-4">
+        <ul class="nav navbar-nav menu__list">
+          <li>
+            <a href="javascript:void(0);">{{ 'SHOP' | translate:lang }}</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">{{ 'CASHANDMILES' | translate:lang }}</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">{{ 'HOTEL' | translate:lang }}</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">{{ 'CAR' | translate:lang }}</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">{{ 'REWARDS' | translate:lang }}</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">{{ 'MYCOCKPIT' | translate:lang }}</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </nav>
   <div class="clearfix"></div>
   <!-- //navigation -->
 </header>

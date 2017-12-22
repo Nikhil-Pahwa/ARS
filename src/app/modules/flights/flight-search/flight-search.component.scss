@@ -79,6 +79,34 @@ section.col {
   width: 75%;
 }
 
+.search-container {
+  width: 80%;
+  margin: 65px auto;
+}
+
 .col {
   float: left;
+}
+
+:host {
+  background-image: url("/assets/images/hero-banner.jpeg");
+  float: left;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-banner-box {
+  background-color: rgba(0, 0, 0, .75);
+  color: #c7c7c7;
+  box-shadow: 0 0 0.8823em 0 rgba(0, 0, 0, .5);
+  width: 60%;
+  margin: 0 auto;
+  padding: 37px 10px 60px;
+  margin-top: 140px;
+  h2 {
+    color: #fff;
+    padding-bottom: 20px;
+    font-size: 23px;
+    text-transform: uppercase;
+  }
 }

@@ -1,6 +1,4 @@
 aside {
-  width: 25%;
-  float: left;
   .pattern-filters {
     .filter-option {
       display: block;
@@ -12,4 +10,17 @@ aside {
       font-size: 0.9em;
     }
   }
+  .section-header-sub span {
+    color: #536d83;
+  }
+  .filter-option {
+    span {
+      font-weight: 400;
+    }
+  }
+}
+
+:host {
+  border: 1px solid red;
+  float: left;
 }

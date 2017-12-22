@@ -1,5 +1,5 @@
 <!-- banner-text -->
-<form #searchForm="ngForm" (ngSubmit)="searchFlights()" accept-charset="utf-8">
+<form #searchForm="ngForm" class="hero-banner-box" (ngSubmit)="searchFlights()" accept-charset="utf-8">
   <div class="banner-text">
     <h2>{{ 'PICK_YOUR_DESTINATION' | translate:lang }}</h2>
     <div class="book-form" id="register">
@@ -31,8 +31,8 @@
       </div>
       <div class="col-md-3 form-date-w3-agileits">
         <label>{{ 'DEPARTURE_DATE' | translate:lang }}</label>
-        <input [ngClass]="{'error': !validateDate() && isSubmitted}" id="datepicker1" [(ngModel)]="search.journeyDate" name="journeyDate"
-          required #journeyDate="ngModel" type="text" required>
+        <input [ngClass]="{'error': !validateDate() && isSubmitted , 'form-control': true }" id="datepicker1" [(ngModel)]="search.journeyDate"
+          name="journeyDate" required #journeyDate="ngModel" type="text" required>
         <small class="message" *ngIf="!validateDate() && isSubmitted">{{ 'SELECT_DATE' | translate:lang }}</small>
         <!-- {{validateDate()}} -->
       </div>
@@ -44,57 +44,59 @@
   </div>
 </form>
 <!-- banner END-->
-<flight-filter *ngIf="filteredList " [flights]=filteredList (selectionChanged)="filterSearch($event) "></flight-filter>
-<!-- Flight Listing -->
-<section class="col " *ngIf="filteredList ">
-  <div class="flight-listing-container ">
-    <span>{{filteredList?.length}} {{ 'RECORDS_FOUND' | translate:lang }}</span>
-    <ul class="results-list ">
-      <li class="offer-listing " *ngFor="let flight of filteredList ">
-        <div class="flex-content ">
-          <div class="flex-area-primary ">
-            <div class="flex-card flex-listing ">
-              <div class="flex-figure ">
-                <figure class="flex-image ">
-                  <img src={{flight.logoUrl}} />
-                </figure>
-              </div>
-              <div class="flex-content ">
-                <div class="flex-area-primary ">
-                  <div class="primary-block ">
-                    <div class="primary ">
-                      <span class="departure-time ">{{flight?.deptime}}</span>
-                      -
-                      <span class="arrival-time ">{{flight?.arrtime}}</span>
+<div class="clearfix search-container">
+  <flight-filter *ngIf="filteredList " [flights]=filteredList (selectionChanged)="filterSearch($event) "></flight-filter>
+  <!-- Flight Listing -->
+  <section class="col " *ngIf="filteredList ">
+    <div class="flight-listing-container ">
+      <span>{{filteredList?.length}} {{ 'RECORDS_FOUND' | translate:lang }}</span>
+      <ul class="results-list ">
+        <li class="offer-listing " *ngFor="let flight of filteredList ">
+          <div class="flex-content ">
+            <div class="flex-area-primary ">
+              <div class="flex-card flex-listing ">
+                <div class="flex-figure ">
+                  <figure class="flex-image ">
+                    <img src={{flight.logoUrl}} />
+                  </figure>
+                </div>
+                <div class="flex-content ">
+                  <div class="flex-area-primary ">
+                    <div class="primary-block ">
+                      <div class="primary ">
+                        <span class="departure-time ">{{flight?.deptime}}</span>
+                        -
+                        <span class="arrival-time ">{{flight?.arrtime}}</span>
+                      </div>
+                      <div class="secondary ">{{flight?.airline}}</div>
                     </div>
-                    <div class="secondary ">{{flight?.airline}}</div>
-                  </div>
-                  <div class="primary-block ">
-                    <div class="primary duration-emphasis ">
-                      <span class="departure-time ">{{flight?.deptime}}</span>
+                    <div class="primary-block ">
+                      <div class="primary duration-emphasis ">
+                        <span class="departure-time ">{{flight?.deptime}}</span>
+                      </div>
+                      <div class="secondary "></div>
                     </div>
-                    <div class="secondary "></div>
-                  </div>
-                  <div class="primary-block ">
-                    {{flight?.stops}} {{ 'STOP' | translate:lang }}
+                    <div class="primary-block ">
+                      {{flight?.stops}} {{ 'STOP' | translate:lang }}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="flex-area-secondary ">
-            <div class="price-button-wrapper ">
-              <div class="price-column ">
-                <div class="offer-price ">
-                  <span class="price-emphasis ">{{flight?.fare | currency:'INR': true : '1.0-2' }}</span>
+            <div class="flex-area-secondary ">
+              <div class="price-button-wrapper ">
+                <div class="price-column ">
+                  <div class="offer-price ">
+                    <span class="price-emphasis ">{{flight?.fare | currency:'INR': true : '1.0-2' }}</span>
+                  </div>
                 </div>
+                <button [routerLink]="[ '/detail', flight.flightId] " class="select ">{{ 'SELECT' | translate:lang }}</button>
               </div>
-              <button [routerLink]="[ '/detail', flight.flightId] " class="select ">{{ 'SELECT' | translate:lang }}</button>
             </div>
           </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
 <!-- Flight Listing END-->
