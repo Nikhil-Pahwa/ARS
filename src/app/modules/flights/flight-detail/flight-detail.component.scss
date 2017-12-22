@@ -16,6 +16,12 @@
   }
 }
 
+.tripSummaryContainer {
+  .totalContainer {
+    margin-bottom: 10px;
+  }
+}
+
 .flex-area-primary {
   .dateAndOD {
     .date {
@@ -59,6 +65,7 @@
   }
   .flightSummary-timeDuration {
     clear: both;
+    margin-top: 16px;
     .departure {
       width: 170px;
       float: left;

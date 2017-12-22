@@ -65,5 +65,6 @@ export class FlightDetailComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     let el = document.getElementById('temp');
     el.remove();
+    this.headerService.setLogo('assets/images/ARS-logo.png');
   }
 }

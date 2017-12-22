@@ -1,60 +1,62 @@
-<header class="cols-row-header cf page-header">
-  <h1 class="section-header-main">{{ 'REVIEW_YOUR_TRIP' | translate:lang }}</h1>
-</header>
-<div class="main">
-  <section class="tripSummaryContainer">
-    <div class="tripSummary">
-      <h2 class="tripSummaryHeader">{{ 'TRIP_SUMMARY' | translate:lang }}</h2>
-      <div class="totalContainer">
-        <div class="packagePriceList">
-          <div class="tripTotals">
-            <span class="trip-total">{{ 'TRIP_TOTAL' | translate:lang }}: {{flight?.fare | currency:'INR': true : '1.0-2' }}</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="btn-primary" [routerLink]="['/payment', flight?.flightId]">{{ 'PAY_ONLINE' | translate:lang }}</button>
-  </section>
-  <section class="flightSummaryContainer">
-    <div class="flex-card">
-      <div class="flex-container">
-        <div class="flex-area-primary">
-          <div class="dateAndOD">
-            <h3 class="date">{{flight?.depDate}}</h3>
-            <ol class="odPair">
-              <li>
-                <span class="type">{{ 'FROM' | translate:lang }}</span>
-                <span class="airport-type">{{flight?.departureAirport}} ({{flight?.origin}})</span>
-              </li>
-              <li>
-                <span class="type">{{ 'TO' | translate:lang }}</span>
-                <span class="airport-type">{{flight?.arrivalAirport}} ({{flight?.destination}})</span>
-              </li>
-            </ol>
-          </div>
-          <figure class="airlineLogo">
-            <img src={{flight?.logoUrl}}>
-          </figure>
-          <h4 class="airlineName">{{flight?.airline}}</h4>
-          <div class="flightSummary-timeDuration">
-            <div class="departure">
-              <span class="time">{{flight?.deptime}}</span>
-              <span class="airportCode">{{flight?.origin}}</span>
-            </div>
-            <div class="arrowIcon">
-              <span class="alt glyphicons glyphicons-arrow-right">To</span>
-            </div>
-            <div class="arrival">
-              <span class="time">{{flight?.arrtime}}</span>
-              <div class="airportCode">{{flight?.destination}}</div>
-            </div>
-            <div class="durationStops">
-              <span class="durationTime">{{flight?.duration}}</span>
-              <span class="stopsLabel"> &nbsp;&nbsp; {{flight?.stops}} {{ 'STOP' | translate:lang }}</span>
+<div class="container">
+  <header class="cols-row-header cf page-header">
+    <h1 class="section-header-main">{{ 'REVIEW_YOUR_TRIP' | translate:lang }}</h1>
+  </header>
+  <div class="main">
+    <section class="tripSummaryContainer">
+      <div class="tripSummary">
+        <h2 class="tripSummaryHeader">{{ 'TRIP_SUMMARY' | translate:lang }}</h2>
+        <div class="totalContainer">
+          <div class="packagePriceList">
+            <div class="tripTotals">
+              <span class="trip-total">{{ 'TRIP_TOTAL' | translate:lang }}: {{flight?.fare | currency:'INR': true : '1.0-2' }}</span>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      <button class="btn-primary" [routerLink]="['/payment', flight?.flightId]">{{ 'PAY_ONLINE' | translate:lang }}</button>
+    </section>
+    <section class="flightSummaryContainer">
+      <div class="flex-card">
+        <div class="flex-container">
+          <div class="flex-area-primary">
+            <div class="dateAndOD">
+              <h3 class="date">{{flight?.depDate}}</h3>
+              <ol class="odPair">
+                <li>
+                  <span class="type">{{ 'FROM' | translate:lang }}</span>
+                  <span class="airport-type">{{flight?.departureAirport}} ({{flight?.origin}})</span>
+                </li>
+                <li>
+                  <span class="type">{{ 'TO' | translate:lang }}</span>
+                  <span class="airport-type">{{flight?.arrivalAirport}} ({{flight?.destination}})</span>
+                </li>
+              </ol>
+            </div>
+            <figure class="airlineLogo">
+              <img src={{flight?.logoUrl}}>
+            </figure>
+            <h4 class="airlineName">{{flight?.airline}}</h4>
+            <div class="flightSummary-timeDuration">
+              <div class="departure">
+                <span class="time">{{flight?.deptime}}</span>
+                <span class="airportCode">{{flight?.origin}}</span>
+              </div>
+              <div class="arrowIcon">
+                <span class="alt glyphicons glyphicons-arrow-right">To</span>
+              </div>
+              <div class="arrival">
+                <span class="time">{{flight?.arrtime}}</span>
+                <div class="airportCode">{{flight?.destination}}</div>
+              </div>
+              <div class="durationStops">
+                <span class="durationTime">{{flight?.duration}}</span>
+                <span class="stopsLabel"> &nbsp;&nbsp; {{flight?.stops}} {{ 'STOP' | translate:lang }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </div>
