@@ -1,6 +1,7 @@
 # environment variables
 environment:
-  nodejs_version: 8.9
+  matrix:
+    - nodejs_version: "8.9"
 
 # scripts that run after cloning repository
 install:
