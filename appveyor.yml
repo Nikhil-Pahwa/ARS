@@ -5,7 +5,6 @@ environment:
 # scripts that run after cloning repository
 install:
   # install node 
-  - npm install -g @angular/cli
   - ng build 
   
 # scripts to run before build
