@@ -4,6 +4,8 @@ environment:
 
 # scripts that run after cloning repository
 install:
+  - node -v
+  - npm -v
   - npm install -g npm@latest
   - npm install -g @angular/cli@latest
   
