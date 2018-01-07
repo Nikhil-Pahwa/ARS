@@ -33,3 +33,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Assumptions 
 Vendor's brand image and style files are hosted in their respective domain. The url for the style and brand image is saved in the Database. These information will be received from the ARS server in the flight object.
+
+## Continous Integration
+This project supports CI using 'Appveyor'.
+
+## Hosting
+Hosting is done using 'surge'
