@@ -5,8 +5,10 @@ environment:
 # scripts that run after cloning repository
 install:
   # install node 
-  - ng build 
   
 # scripts to run before build
 before_build:
   - npm install
+
+build:  
+  - ng build 
