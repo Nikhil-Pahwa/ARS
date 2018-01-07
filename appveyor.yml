@@ -8,8 +8,7 @@ install:
   - ps: Update-NodeJsInstallation (Get-NodeJsLatestBuild $env:nodejs_version)
   - node -v
   - npm -v
-  - npm install -g npm@latest
-  - npm install -g @angular/cli@latest
+  - npm install
   
 # scripts to run before build
 before_build:
