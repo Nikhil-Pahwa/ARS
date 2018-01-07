@@ -1,0 +1,13 @@
+# environment variables
+environment:
+  nodejs_version: "6.9"
+
+# scripts that run after cloning repository
+install:
+  # install node 
+  - npm install -g @angular/cli
+  - ng build 
+  
+# scripts to run before build
+before_build:
+  - npm install
