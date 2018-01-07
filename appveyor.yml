@@ -1,6 +1,6 @@
 # environment variables
 environment:
-  nodejs_version: "6.9"
+  nodejs_version: "6.10"
 
 # scripts that run after cloning repository
 install:
