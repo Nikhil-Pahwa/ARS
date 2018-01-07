@@ -9,6 +9,7 @@ install:
   - node -v
   - npm -v
   - npm install
+  - npm install -g @angular/cli@latest
   
 # scripts to run before build
 before_build:
