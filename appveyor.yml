@@ -10,5 +10,6 @@ install:
 before_build:
   - npm install -g npm@latest
   - npm install -g @angular/cli
+  - npm install
   - ng build 
 
