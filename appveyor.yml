@@ -5,6 +5,7 @@ environment:
 
 # scripts that run after cloning repository
 install:
+  - ps: Update-NodeJsInstallation (Get-NodeJsLatestBuild $env:nodejs_version)
   - node -v
   - npm -v
   - npm install -g npm@latest
