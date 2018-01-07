@@ -9,6 +9,5 @@ install:
 # scripts to run before build
 before_build:
   - npm install
-
-build:  
   - ng build 
+
